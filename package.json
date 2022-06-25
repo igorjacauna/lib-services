@@ -1,0 +1,10 @@
+{
+  "name": "@igorjacauna/vue-lib-services",
+  "version": "0.0.0",
+  "description": "Biblioteca de serviços para Vue",
+  "main": "index.ts",
+  "repository": "https://github.com/igorjacauna/vue-lib-services",
+  "author": "Igor Jacaúna <igor.jacauna@gmail.com> (github.com/igorjacauna)",
+  "license": "MIT",
+  "private": true
+}
