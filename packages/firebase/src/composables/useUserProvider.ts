@@ -8,9 +8,14 @@ const useUserProvider = () => {
 
   provide<Ref<User | null>>('user', user);
 
-  return onAuthStateChanged((u) => { 
+  const unsubscribe = onAuthStateChanged((u) => { 
     user.value = u; 
   });
+
+  return {
+    user,
+    unsubscribe,
+  };
 };
 
 export default useUserProvider;
