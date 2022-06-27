@@ -4,6 +4,28 @@ Lib for use with Firebase
 
 ## Usage
 
+### Initialize the Firebase app
+
+This can be done on `main.ts`
+
+```ts
+import { initFirebase } from '@igorjacauna/vue-lib-firebase';
+
+const firebaseConfig = {
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
+};
+
+const firebaseApp = initFirebase(firebaseConfig);
+
+```
+
 ### Auth
 
 #### SignIn
@@ -36,32 +58,30 @@ const authenticated = await isAuthenticated();
 
 #### User object
 
-You can use `provide` and `inject` from Vue on your `App.vue` to get user object on any componente on your application
+You can use the composables `useUserProvider` and `useUserInject` to get user object on any componente on your application
 
 On your `App.vue`
 ```vue
 <script lant="ts" setup>
-import { User } from '@firebase/auth';
-import { provide, Ref } from 'vue';
+import { onUnmounted } from 'vue';
 import { onAuthStateChanged } from '@igorjacauna/vue-lib-firebase';
 
-const user = ref<User | null>();
+const { unsubscribe } = useUserProvider();
 
-provide<Ref<User | null>>('user', user);
-
-onAuthStateChanged((u) => { 
-  user.value = u; 
-});
+// We use onAuthStateChanged observer from Firebase
+// to get User object changes
+// For best practice we must unsubscribe when needed
+onUnmounted(() => unsubscribe());
 </script>
 ```
 
-On any other component
+On any other child component of `App.vue`, you can inject
 
 ```vue
 <script setup lang="ts">
-import { User } from '@firebase/auth';
-import { Ref, inject } from 'vue';
-const user = inject<Ref<User | null>>('user');
+import { useUserInject } from '@igorjacauna/vue-lib-firebase';
+
+const user = useUserInject();
 </script>
 
 <template>
@@ -73,4 +93,21 @@ const user = inject<Ref<User | null>>('user');
     </div>
   </div>
 </template>
+```
+
+#### Navigation Guard
+
+Use with meta configs of `vue-router`. The route protected must have `meta.auth === true`
+
+When a route has `meta.auth === true` we will use `beforeResolve` from `vue-router` navigation guard and allow navigation if authenticated
+
+```ts
+import { createRouter } from 'vue-router';
+import { configureAuthGuard } from '@igorjacauna/vue-lib-firebase';
+
+const router = createRouter({
+  ...
+});
+
+configureAuthGuard(router);
 ```
