@@ -9,7 +9,7 @@ Lib for use with Firebase
 This can be done on `main.ts`
 
 ```ts
-import { initFirebase } from '@igorjacauna/lib-services';
+import { initFirebase } from '@igorjacauna/lib-firebase';
 
 const firebaseConfig = {
   apiKey: "",
@@ -33,7 +33,7 @@ const firebaseApp = initFirebase(firebaseConfig);
 Make SignIn passing provider. Google is the only supported for now
 
 ```ts
-import { signIn } from '@igorjacauna/lib-services';
+import { signIn } from '@igorjacauna/lib-firebase';
 
 signIn('google');
 ```
@@ -41,7 +41,7 @@ signIn('google');
 #### SignOut
 
 ```ts
-import { signOut } from '@igorjacauna/lib-services';
+import { signOut } from '@igorjacauna/lib-firebase';
 
 signOut();
 ```
@@ -51,7 +51,7 @@ signOut();
 Returns `User` object if authenticated else `null`
 
 ```ts
-import { isAuthenticated } from '@igorjacauna/lib-services';
+import { isAuthenticated } from '@igorjacauna/lib-firebase';
 
 const authenticated = await isAuthenticated();
 ```
@@ -64,7 +64,6 @@ On your `App.vue`
 ```vue
 <script lant="ts" setup>
 import { onUnmounted } from 'vue';
-import { onAuthStateChanged } from '@igorjacauna/lib-services';
 
 const { unsubscribe } = useUserProvider();
 
@@ -79,7 +78,7 @@ On any other child component of `App.vue`, you can inject
 
 ```vue
 <script setup lang="ts">
-import { useUserInject } from '@igorjacauna/lib-services';
+import { useUserInject } from '@igorjacauna/vue-lib-firebase';
 
 const user = useUserInject();
 </script>
@@ -103,7 +102,7 @@ When a route has `meta.auth === true` we will use `beforeResolve` from `vue-rout
 
 ```ts
 import { createRouter } from 'vue-router';
-import { configureAuthGuard } from '@igorjacauna/lib-services';
+import { configureAuthGuard } from '@igorjacauna/vue-lib-firebase';
 
 const router = createRouter({
   ...
