@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "release": "lerna publish --no-verify-access"
+    "release": "lerna publish --conventional-commits --no-verify-access"
   },
   "devDependencies": {
     "@igorjacauna/eslint-config": "^0.0.6",
