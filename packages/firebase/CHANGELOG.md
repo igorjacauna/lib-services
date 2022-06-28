@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/igorjacauna/vue-lib-services/compare/@igorjacauna/vue-lib-firebase@0.1.0...@igorjacauna/vue-lib-firebase@0.1.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **functions:** Corrige exportação ([cbabf15](https://github.com/igorjacauna/vue-lib-services/commit/cbabf15212c0367037804593d24550d8f80109a4))
+
+
+
+
+
 # 0.1.0 (2022-06-28)
 
 
