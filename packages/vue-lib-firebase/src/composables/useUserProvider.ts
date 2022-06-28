@@ -1,6 +1,6 @@
 import { User } from '@firebase/auth';
 import { provide, ref, Ref } from 'vue';
-import { onAuthStateChanged } from '../auth';
+import { onAuthStateChanged } from '@igorjacauna/lib-firebase';
 
 const useUserProvider = () => {
 

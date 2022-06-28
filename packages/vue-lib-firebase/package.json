@@ -19,7 +19,7 @@
     "url": "git+https://github.com/igorjacauna/vue-lib-services.git"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "rm -rf dist && tsc"
   },
   "bugs": {
     "url": "https://github.com/igorjacauna/vue-lib-services/issues"
@@ -37,5 +37,8 @@
   "peerDependencies": {
     "firebase": "^9.8.4",
     "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "@igorjacauna/lib-firebase": "0.0.0"
   }
 }
