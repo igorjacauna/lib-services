@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/igorjacauna/vue-lib-services/compare/@igorjacauna/vue-lib-firebase@0.1.1...@igorjacauna/vue-lib-firebase@0.2.0) (2022-06-28)
+
+
+### Features
+
+* **service:** Remove funções isoladas do Firebase ([787b0cd](https://github.com/igorjacauna/vue-lib-services/commit/787b0cddcae30441a18cf3c05905669630f61400))
+
+
+
+
+
 ## [0.1.1](https://github.com/igorjacauna/vue-lib-services/compare/@igorjacauna/lib-services@0.1.0...@igorjacauna/lib-services@0.1.1) (2022-06-28)
 
 
