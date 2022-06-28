@@ -1,0 +1,6 @@
+{
+  "extends": "@igorjacauna",
+  "rules": {
+    "max-len": "off"
+  }
+}

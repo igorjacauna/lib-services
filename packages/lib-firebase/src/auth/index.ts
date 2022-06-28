@@ -8,7 +8,6 @@ import {
   NextOrObserver,
   User } from "firebase/auth";
 import googleProvider from './providers/googleProvider';
-import { Router } from 'vue-router';
 
 type Providers = 'google'
 
@@ -58,16 +57,6 @@ export const isAuthenticated = () => {
       unsubscribe();
       resolve(user);
     });
-  });
-};
-
-export const configureAuthGuard = (router: Router) => {
-  router.beforeResolve(async (to) => {
-    const user = await isAuthenticated();
-    if (to.meta.auth && !user) {
-      return '/';
-    }
-    return true;
   });
 };
 
