@@ -5,7 +5,7 @@
     "declaration": true,
     "sourceMap": true,
     "outDir": "dist",
-    "declarationDir": "dist/types",
+    "declarationDir": "dist/.",
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true
