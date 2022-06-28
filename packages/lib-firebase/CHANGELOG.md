@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/igorjacauna/lib-services/compare/@igorjacauna/lib-firebase@0.1.1...@igorjacauna/lib-firebase@0.1.2) (2022-06-28)
+
+
+### Bug Fixes
+
+* Organiza exports para isolar ambientes ([bed75fd](https://github.com/igorjacauna/lib-services/commit/bed75fd6c13a05a1964fb14130707d5f9278cea7))
+
+
+
+
+
 ## [0.1.1](https://github.com/igorjacauna/lib-services/compare/@igorjacauna/lib-firebase@0.1.0...@igorjacauna/lib-firebase@0.1.1) (2022-06-28)
 
 
