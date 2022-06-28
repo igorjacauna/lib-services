@@ -521,12 +521,28 @@
   dependencies:
     eslint-plugin-import "^2.26.0"
 
+"@igorjacauna/eslint-config-basic@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@igorjacauna/eslint-config-basic/-/eslint-config-basic-0.0.7.tgz#8ff7fc71ff31bad21f1bbd3d809f1262b637fbc0"
+  integrity sha512-UnMCb9sgdiIY9DbsbKBMrInuJ6EsvafcE5PnJZmb1jNAJqU1pTbm9jOkamno/wXqXqd0LcNCeJFmAKQVwSOlkg==
+  dependencies:
+    eslint-plugin-import "^2.26.0"
+
 "@igorjacauna/eslint-config-typescript@^0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@igorjacauna/eslint-config-typescript/-/eslint-config-typescript-0.0.6.tgz#5d2aca8e8d82b00e19c0deda5b53b62d9f29dcff"
   integrity sha512-TJ5I4+XxNPtW2FPSZzq/nxMFaZwqoZ0KlMkLCgRQPZWJeUf3a+oYvwX9AyuxMX6RSN33iizBL5cxlWsHMsKW3w==
   dependencies:
     "@igorjacauna/eslint-config-basic" "^0.0.6"
+    "@typescript-eslint/eslint-plugin" "^5.28.0"
+    "@typescript-eslint/parser" "^5.28.0"
+
+"@igorjacauna/eslint-config-typescript@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@igorjacauna/eslint-config-typescript/-/eslint-config-typescript-0.0.7.tgz#74ee9a2e54844b8be2e843b494cceae68c22fe9b"
+  integrity sha512-Xpl1++3555wulXWG5ertUoxumPHqrD0YwIk2u2n2I2bFbI36NCDLbUU+Q7vYAolCbBByy4k9ModK2PWj43OuzA==
+  dependencies:
+    "@igorjacauna/eslint-config-basic" "^0.0.7"
     "@typescript-eslint/eslint-plugin" "^5.28.0"
     "@typescript-eslint/parser" "^5.28.0"
 
@@ -538,12 +554,28 @@
     "@igorjacauna/eslint-config-typescript" "^0.0.6"
     eslint-plugin-vue "^9.1.1"
 
+"@igorjacauna/eslint-config-vue@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@igorjacauna/eslint-config-vue/-/eslint-config-vue-0.0.7.tgz#4cc3e54427d6a8fef0457ca4f048cbac45fd0f92"
+  integrity sha512-yHULHxA8VmBOZy1bldafj1L3iOUgXpM7TIXei+TZ5r9D5ZlrAh13PqcoFWR3bSIvClHH6tt9THXoo1+da90kBw==
+  dependencies:
+    "@igorjacauna/eslint-config-typescript" "^0.0.7"
+    eslint-plugin-vue "^9.1.1"
+
 "@igorjacauna/eslint-config@^0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@igorjacauna/eslint-config/-/eslint-config-0.0.6.tgz#3e9ae90b8c02696c8a38c710a8be3d3324d1711c"
   integrity sha512-uC05/cEhyoraZG6sLYMBlfyuCI1AbnlDAviqc9RRAhRWNuzpajsKKGvXstFHmT9cZQeJsthhIcd+cshGg84SiA==
   dependencies:
     "@igorjacauna/eslint-config-vue" "^0.0.6"
+    eslint-plugin-import "^2.26.0"
+
+"@igorjacauna/eslint-config@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@igorjacauna/eslint-config/-/eslint-config-0.0.7.tgz#f67c5a018f8d11b5b7c563706bd8d0d8618c46d0"
+  integrity sha512-WIbQNd+3EMJBJunFL1xhUZF1iPOr4ON3RVNsQu8AHfHt/x+YUM3VhbFOKG+x1SQoKw7dN3/oDVxoKFrOIX+qEQ==
+  dependencies:
+    "@igorjacauna/eslint-config-vue" "^0.0.7"
     eslint-plugin-import "^2.26.0"
 
 "@isaacs/string-locale-compare@^1.1.0":
