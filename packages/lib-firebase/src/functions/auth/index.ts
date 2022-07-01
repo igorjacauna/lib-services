@@ -7,7 +7,7 @@ const createUser = functions.auth.user().onCreate((user) => {
 
   const userCollection = db.collection("users");
 
-  userCollection.doc(uid).set({});
+  userCollection.doc(uid).set(user.toJSON());
 });
 
 export default {
