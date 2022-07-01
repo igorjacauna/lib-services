@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/igorjacauna/lib-services/compare/@igorjacauna/lib-firebase@0.2.0...@igorjacauna/lib-firebase@0.2.1) (2022-07-01)
+
+
+### Bug Fixes
+
+* Reverte alteração ([9616f02](https://github.com/igorjacauna/lib-services/commit/9616f02275ef0c59353a8d7458f5088a1bed04ba))
+
+
+
+
+
 # [0.2.0](https://github.com/igorjacauna/lib-services/compare/@igorjacauna/lib-firebase@0.1.3...@igorjacauna/lib-firebase@0.2.0) (2022-07-01)
 
 
