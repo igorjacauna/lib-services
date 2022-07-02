@@ -18,6 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/igorjacauna/vue-lib-services.git"
   },
+  "prepublishOnly": "build",
   "scripts": {
     "build": "rm -rf dist && tsc"
   },
