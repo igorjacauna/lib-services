@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/igorjacauna/lib-services/compare/@igorjacauna/lib-firebase@0.2.3...@igorjacauna/lib-firebase@0.2.4) (2022-07-02)
+
+
+### Bug Fixes
+
+* Corrige local de script ([eb0d0b0](https://github.com/igorjacauna/lib-services/commit/eb0d0b090bea5f025b64c3d291d069763c7cac23))
+
+
+
+
+
 ## [0.2.3](https://github.com/igorjacauna/lib-services/compare/@igorjacauna/lib-firebase@0.2.2...@igorjacauna/lib-firebase@0.2.3) (2022-07-02)
 
 
