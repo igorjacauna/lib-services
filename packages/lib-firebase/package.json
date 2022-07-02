@@ -18,9 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/igorjacauna/lib-services.git"
   },
-  "prepublishOnly": "build",
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "yarn build"
   },
   "bugs": {
     "url": "https://github.com/igorjacauna/lib-services/issues"
