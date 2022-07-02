@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/igorjacauna/vue-lib-services/compare/@igorjacauna/vue-lib-firebase@0.2.6...@igorjacauna/vue-lib-firebase@0.2.7) (2022-07-02)
+
+
+### Bug Fixes
+
+* Corrige retorno de função ([58a9eff](https://github.com/igorjacauna/vue-lib-services/commit/58a9effbe7700fb34fadda29cf21f14609bc9488))
+
+
+
+
+
 ## [0.2.5](https://github.com/igorjacauna/vue-lib-services/compare/@igorjacauna/vue-lib-firebase@0.2.4...@igorjacauna/vue-lib-firebase@0.2.5) (2022-07-01)
 
 **Note:** Version bump only for package @igorjacauna/vue-lib-firebase

@@ -1,6 +1,6 @@
 {
   "name": "@igorjacauna/vue-lib-firebase",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Serviços do Firebase para Vue",
   "keywords": [
     "vue",
@@ -38,6 +38,6 @@
     "vue": "^3.2.37"
   },
   "dependencies": {
-    "@igorjacauna/lib-firebase": "^0.2.2"
+    "@igorjacauna/lib-firebase": "^0.2.3"
   }
 }
